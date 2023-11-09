@@ -11,26 +11,6 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {
-    colors: {
-      bgLight,
-      bgDark,
-      transparent: 'transparent',
-      black: colors.black,
-      white: colors.white,
-      gray: colors.gray,
-      dark: '#151419',
-      viola: {
-        300: '#ea71ff',
-        400: '#9325A6',
-        500: '#7f1092',
-        600: '#605c70',
-        700: '#484554',
-        800: '#302e38',
-        900: '#25222a',
-      },
-    },
-  },
   extend: {
     backgroundImage: {
       'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
