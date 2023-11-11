@@ -1,5 +1,4 @@
 'use client'
-
 import clsx from 'clsx'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useRouter } from 'next/navigation'
@@ -18,10 +17,7 @@ export default function Questions() {
 
   return (
     <>
-      <button
-        className={clsx(styles.backButton, 'bg-bgLight dark:bg-bgDark')}
-        onClick={() => push('/')}
-      >
+      <button className={styles.backButton} onClick={() => push('/')}>
         <FaAngleLeft className="text-gray-900 dark:text-gray-200" />
       </button>
 

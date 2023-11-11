@@ -10,6 +10,12 @@ const nunito = Nunito()
 export const metadata: Metadata = {
   title: 'Вопросы на знакомство',
   description: 'Вопросы на знакомство. Игра для небольшой компании',
+  openGraph: {
+    type: 'website',
+    title: 'Вопросы на знакомство',
+    description: 'Вопросы на знакомство. Игра для небольшой компании',
+    locale: 'ru',
+  },
 }
 export const viewport: Viewport = {
   width: 'device-width',
