@@ -1,0 +1,20 @@
+.layout {
+  @apply flex justify-center;
+
+  > .layoutWrapper {
+    @apply relative w-full select-none bg-cover bg-[88%] bg-no-repeat px-5;
+    transition: background-image ease-in-out 50ms;
+    @media screen and (max-width: 430px) {
+      transition-property: none;
+    }
+  }
+
+  > .bgDark {
+    @apply bg-bgDark;
+    background-image: url('../../assets/imgs/bgImgBlack.svg');
+  }
+  > .bgWhite {
+    @apply bg-bgLight;
+    background-image: url('../../assets/imgs/bgImgWhite.svg');
+  }
+}

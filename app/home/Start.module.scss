@@ -1,0 +1,38 @@
+.infoButton {
+  @apply btn-shadow absolute left-6 top-8 z-20 h-10 w-10 text-gray-400 focus:outline-none;
+  transition-property: left, top, width, height, border-radius, box-shadow;
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  > svg {
+    @apply absolute left-3 top-3 opacity-100;
+    transition-duration: 0.8s;
+    transition-property: opacity, left, top;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}
+
+.infoButtonActive {
+  @apply left-0 top-0 h-full w-full rounded-none shadow-none;
+  > svg {
+    @apply -top-9 left-9 opacity-0;
+  }
+}
+
+.start {
+  @apply flex h-full flex-col items-center justify-between py-12 sm:justify-center sm:gap-16;
+
+  .infoWrapper {
+    @apply fixed left-0 top-0 z-30 h-full w-full gap-4 flex-center sm:gap-8;
+  }
+
+  > .toggle {
+    @apply absolute right-6 top-[2.125rem] z-10;
+  }
+
+  h2 {
+    @apply text-5xl font-extrabold leading-[1.1] sm:text-8xl sm:leading-tight;
+  }
+  > .startBtn {
+    @apply rounded-full px-5 py-3 text-3xl font-semibold uppercase flex-center sm:px-12 sm:py-5 sm:text-4xl;
+  }
+}
