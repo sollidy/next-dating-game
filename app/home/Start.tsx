@@ -1,13 +1,13 @@
 'use client'
-
 import clsx from 'clsx'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { FaInfo } from 'react-icons/fa'
-import FriendsImage from '@/assets/imgs/friends.svg'
+import friends from '@/assets/imgs/friends.svg'
 import { Info } from './Info/Info'
 import styles from './Start.module.scss'
+import Image from 'next/image'
 
 import { AnimatePresence } from 'framer-motion'
 import { useKeyPress } from '@/hooks/useKeys'
@@ -15,7 +15,7 @@ import { useKeyPress } from '@/hooks/useKeys'
 export const Start = () => {
   const { push } = useRouter()
 
-  useKeyPress(() => push('questions'), ['Enter', ' '])
+  useKeyPress(() => push('questions'), ['Enter'])
   const [showInfo, setShowInfo] = useState<boolean>(false)
 
   return (
@@ -48,7 +48,16 @@ export const Start = () => {
             )}
           </AnimatePresence>
 
-          <FriendsImage draggable={false} className="mt-4 sm:hidden" />
+          <Image
+            className="relative mt-4 sm:hidden"
+            src={friends}
+            alt="Logo"
+            width={300}
+            height={217}
+            priority
+            draggable={false}
+            style={{ width: 'auto', height: 'auto' }}
+          />
           <div className="text-black dark:text-white">
             <h2>Матрёшка</h2>
           </div>

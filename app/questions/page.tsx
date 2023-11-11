@@ -12,8 +12,9 @@ export default function Questions() {
   const { num, countElements, currentQuestion, setQuestion } = useQuestions()
 
   const { push } = useRouter()
+  useKeyPress(() => push('/'), ['Escape'])
   useKeyPress(() => setQuestion('prev'), ['ArrowLeft'])
-  useKeyPress(() => setQuestion('next'), ['ArrowRight', ' '])
+  useKeyPress(() => setQuestion('next'), ['ArrowRight'])
 
   return (
     <>
@@ -31,7 +32,6 @@ export default function Questions() {
           exit={{ opacity: 0 }}
           className={styles.questions}
         >
-          {/* <NavButton icon="back" /> */}
           <div
             className={clsx(styles.counter, 'text-gray-600 dark:text-gray-300')}
           >{`${num}/${countElements}`}</div>
