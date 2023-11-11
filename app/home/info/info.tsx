@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import { FaGithub } from 'react-icons/fa'
 import { MdClose } from 'react-icons/md'
-import styles from './Info.module.scss'
+import styles from './info.module.scss'
 
 interface InfoProps {
   close: () => void

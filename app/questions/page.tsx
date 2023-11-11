@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useRouter } from 'next/navigation'
 import { FaAngleLeft, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
-import styles from './Questions.module.scss'
+import styles from './questions.module.scss'
 import { useQuestions } from './useQuestions'
 import { useKeyPress } from '@/hooks/useKeys'
 

@@ -1,5 +1,5 @@
-import { Start } from './home/Start'
+import { HomePage } from './home'
 
 export default function Home() {
-  return <Start />
+  return <HomePage />
 }

@@ -1,2 +1,1 @@
-export * from './nav-button/NavButton'
-export * from './toggle/Toggle'
+export * from './nav-button/nav-button'

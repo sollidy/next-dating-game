@@ -5,14 +5,14 @@ import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { FaInfo } from 'react-icons/fa'
 import friends from '@/assets/imgs/friends.svg'
-import { Info } from './Info/Info'
-import styles from './Start.module.scss'
+import { Info } from './info/info'
+import styles from './home.module.scss'
 import Image from 'next/image'
 
 import { AnimatePresence } from 'framer-motion'
 import { useKeyPress } from '@/hooks/useKeys'
 
-export const Start = () => {
+export const HomePage = () => {
   const { push } = useRouter()
 
   useKeyPress(() => push('questions'), ['Enter'])
@@ -47,7 +47,6 @@ export const Start = () => {
               </motion.div>
             )}
           </AnimatePresence>
-
           <Image
             className="relative mt-4 sm:hidden"
             src={friends}
