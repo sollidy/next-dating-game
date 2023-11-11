@@ -15,11 +15,11 @@ export const Info = ({ close }: InfoProps) => {
       <div className={styles.author}>
         <a
           className={clsx(styles.link)}
-          href="https://github.com/m7mark"
+          href="https://github.com/sollidy"
           target="_blank"
           rel="noopener noreferrer"
         >
-          @m7mark <FaGithub className="text-gray-600 dark:text-gray-500" />
+          @sollidy <FaGithub className="text-gray-600 dark:text-gray-500" />
         </a>
       </div>
     </div>

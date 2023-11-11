@@ -24,7 +24,26 @@ const config: Config = {
       DEFAULT: '200ms',
     },
   },
-
+  theme: {
+    colors: {
+      bgLight,
+      bgDark,
+      transparent: 'transparent',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.gray,
+      dark: '#151419',
+      viola: {
+        300: '#ea71ff',
+        400: '#9325A6',
+        500: '#7f1092',
+        600: '#605c70',
+        700: '#484554',
+        800: '#302e38',
+        900: '#25222a',
+      },
+    },
+  },
   plugins: [
     plugin(({ addBase, addComponents, addUtilities, theme }) => {
       addBase({

@@ -1,15 +1,16 @@
+'use client'
+
 import clsx from 'clsx'
 import { motion } from 'framer-motion'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { FaInfo } from 'react-icons/fa'
-import FriendsImage from '../../../assets/imgs/friends.svg'
-import { useKeyPress } from '../../../hooks/useKeys'
-import { Toggle as ToggleTheme } from '../../ui'
+import FriendsImage from '@/assets/imgs/friends.svg'
 import { Info } from './Info/Info'
 import styles from './Start.module.scss'
 
 import { AnimatePresence } from 'framer-motion'
+import { useKeyPress } from '@/hooks/useKeys'
 
 export const Start = () => {
   const { push } = useRouter()
@@ -47,7 +48,6 @@ export const Start = () => {
             )}
           </AnimatePresence>
 
-          <ToggleTheme className={styles.toggle} />
           <FriendsImage draggable={false} className="mt-4 sm:hidden" />
           <div className="text-black dark:text-white">
             <h2>Матрёшка</h2>
@@ -55,7 +55,7 @@ export const Start = () => {
           <button
             className={clsx(
               styles.startBtn,
-              'bg-viola-400 text-white dark:bg-viola-300 dark:text-black'
+              'bg-viola-400 dark:bg-viola-300 text-white dark:text-black',
             )}
             onClick={() => push('questions')}
           >

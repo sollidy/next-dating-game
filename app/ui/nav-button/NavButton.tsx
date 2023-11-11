@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import { FaArrowCircleLeft, FaInfoCircle } from 'react-icons/fa'
 import styles from './NavButton.module.scss'
 import { NavButtonProps } from './NavButton.props'

@@ -25,10 +25,6 @@
     @apply fixed left-0 top-0 z-30 h-full w-full gap-4 flex-center sm:gap-8;
   }
 
-  > .toggle {
-    @apply absolute right-6 top-[2.125rem] z-10;
-  }
-
   h2 {
     @apply text-5xl font-extrabold leading-[1.1] sm:text-8xl sm:leading-tight;
   }
