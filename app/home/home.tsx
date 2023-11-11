@@ -21,12 +21,12 @@ export const HomePage = () => {
   return (
     <>
       <button
-        className={clsx(styles.infoButton, 'bg-bgLight dark:bg-bgDark', [
+        className={clsx(styles.infoButton, [
           showInfo && styles.infoButtonActive,
         ])}
         onClick={() => !showInfo && setShowInfo(true)}
       >
-        <FaInfo className="text-gray-900 dark:text-gray-200" />
+        <FaInfo />
       </button>
       <AnimatePresence>
         <motion.div
@@ -60,13 +60,7 @@ export const HomePage = () => {
           <div className="text-black dark:text-white">
             <h2>Матрёшка</h2>
           </div>
-          <button
-            className={clsx(
-              styles.startBtn,
-              'bg-viola-400 dark:bg-viola-300 text-white dark:text-black',
-            )}
-            onClick={() => push('questions')}
-          >
+          <button className={styles.startBtn} onClick={() => push('questions')}>
             Играть
           </button>
         </motion.div>

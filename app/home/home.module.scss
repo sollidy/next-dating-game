@@ -1,10 +1,10 @@
 .infoButton {
-  @apply btn-shadow absolute left-6 top-8 z-20 h-10 w-10 text-gray-400 focus:outline-none;
+  @apply bg-bgLight dark:bg-bgDark btn-shadow absolute left-6 top-8 z-20 h-10 w-10 text-gray-400 focus:outline-none;
   transition-property: left, top, width, height, border-radius, box-shadow;
   transition-duration: 0.8s;
   transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   > svg {
-    @apply absolute left-3 top-3 opacity-100;
+    @apply absolute left-3 top-3 text-gray-900 opacity-100 dark:text-gray-200;
     transition-duration: 0.8s;
     transition-property: opacity, left, top;
     transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -29,6 +29,6 @@
     @apply text-5xl font-extrabold leading-[1.1] sm:text-8xl sm:leading-tight;
   }
   > .startBtn {
-    @apply rounded-full px-5 py-3 text-3xl font-semibold uppercase flex-center sm:px-12 sm:py-5 sm:text-4xl;
+    @apply bg-viola-400 dark:bg-viola-300 rounded-full px-5 py-3 text-3xl font-semibold uppercase text-white flex-center dark:text-black sm:px-12 sm:py-5 sm:text-4xl;
   }
 }
