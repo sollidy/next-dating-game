@@ -12,11 +12,6 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   extend: {
-    backgroundImage: {
-      'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-      'gradient-conic':
-        'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-    },
     transitionTimingFunction: {
       DEFAULT: 'ease-in-out',
     },
@@ -41,6 +36,12 @@ const config: Config = {
         700: '#484554',
         800: '#302e38',
         900: '#25222a',
+      },
+    },
+    extend: {
+      backgroundImage: {
+        'dark-image': "url('@/assets/imgs/bgImgBlack.svg')",
+        'light-image': "url('@/assets/imgs/bgImgWhite.svg')",
       },
     },
   },

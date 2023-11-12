@@ -4,6 +4,7 @@ import type { Metadata, Viewport } from 'next'
 import { Nunito } from 'next/font/google'
 import './globals.css'
 import Div100vh from 'react-div-100vh'
+import styles from './layout.module.scss'
 
 const nunito = Nunito()
 
@@ -35,7 +36,9 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={nunito.className}>
-        <Div100vh>{children}</Div100vh>
+        <main className={styles.layoutBg}>
+          <Div100vh>{children}</Div100vh>
+        </main>
       </body>
     </html>
   )
