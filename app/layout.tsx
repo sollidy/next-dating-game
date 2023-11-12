@@ -6,7 +6,7 @@ import { LayoutClient } from '@/components'
 const nunito = Nunito({ subsets: ['cyrillic'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://questions-game-beta.vercel.app/'),
+  metadataBase: new URL('https://next-dating-game.vercel.app/'),
   title: 'Вопросы на знакомство',
   description: 'Вопросы на знакомство. Игра для небольшой компании',
   openGraph: {
