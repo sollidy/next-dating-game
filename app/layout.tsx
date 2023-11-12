@@ -2,7 +2,7 @@
 
 import type { Metadata, Viewport } from 'next'
 import { Nunito } from 'next/font/google'
-import './globals.css'
+import './globals.scss'
 import Div100vh from 'react-div-100vh'
 import styles from './layout.module.scss'
 
