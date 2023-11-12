@@ -1,5 +1,5 @@
 .layoutBg {
-  @apply bg-light-image dark:bg-dark-image relative w-full select-none bg-cover bg-[88%] bg-no-repeat px-5;
+  @apply relative w-full select-none bg-light-image bg-cover bg-[88%] bg-no-repeat px-5 dark:bg-dark-image;
   transition: background-image ease-in-out 50ms;
   @media screen and (max-width: 430px) {
     transition-property: none;

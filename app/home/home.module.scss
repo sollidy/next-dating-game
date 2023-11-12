@@ -1,5 +1,5 @@
 .infoButton {
-  @apply bg-bgLight dark:bg-bgDark btn-shadow absolute left-6 top-8 z-20 h-10 w-10 text-gray-400 focus:outline-none;
+  @apply btn-shadow absolute left-6 top-8 z-20 h-10 w-10 bg-bgLight text-gray-400 focus:outline-none dark:bg-bgDark;
   transition-property: left, top, width, height, border-radius, box-shadow;
   transition-duration: 0.8s;
   transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -29,6 +29,6 @@
     @apply text-5xl font-extrabold leading-[1.1] sm:text-8xl sm:leading-tight;
   }
   > .startBtn {
-    @apply bg-viola-400 dark:bg-viola-300 rounded-full px-5 py-3 text-3xl font-semibold uppercase text-white flex-center dark:text-black sm:px-12 sm:py-5 sm:text-4xl;
+    @apply rounded-full bg-viola-400 px-5 py-3 text-3xl font-semibold uppercase text-white flex-center dark:bg-viola-300 dark:text-black sm:px-12 sm:py-5 sm:text-4xl;
   }
 }

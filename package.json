@@ -6,7 +6,11 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint && yarn run lint:types",
+    "lint:types": "tsc --noemit",
+    "lint:prettier": "prettier --check \"./**/*.{js,ts,tsx,scss,json}\"",
+    "fix:lint": "next lint --fix",
+    "fix:prettier": "prettier --write \"./**/*.{js,ts,tsx,scss,json}\""
   },
   "dependencies": {
     "clsx": "^2.0.0",
