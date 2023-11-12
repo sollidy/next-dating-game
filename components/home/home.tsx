@@ -12,7 +12,7 @@ import Image from 'next/image'
 import { AnimatePresence } from 'framer-motion'
 import { useKeyPress } from '@/hooks/useKeys'
 
-export const Home = () => {
+export default function Home() {
   const { push } = useRouter()
 
   useKeyPress(() => push('questions'), ['Enter'])
