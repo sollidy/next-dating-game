@@ -1,14 +1,12 @@
-'use client'
-
 import type { Metadata, Viewport } from 'next'
 import { Nunito } from 'next/font/google'
 import './globals.scss'
-import Div100vh from 'react-div-100vh'
-import styles from './layout.module.scss'
+import { LayoutClient } from '@/components'
 
-const nunito = Nunito()
+const nunito = Nunito({ subsets: ['cyrillic'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://questions-game-beta.vercel.app/'),
   title: 'Вопросы на знакомство',
   description: 'Вопросы на знакомство. Игра для небольшой компании',
   openGraph: {
@@ -36,9 +34,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={nunito.className}>
-        <main className={styles.layoutBg}>
-          <Div100vh>{children}</Div100vh>
-        </main>
+        <LayoutClient>{children}</LayoutClient>
       </body>
     </html>
   )

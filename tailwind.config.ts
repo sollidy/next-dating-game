@@ -40,8 +40,8 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
-        'dark-image': "url('@/assets/imgs/bgImgBlack.svg')",
-        'light-image': "url('@/assets/imgs/bgImgWhite.svg')",
+        'dark-image': "url('../../assets/imgs/bgImgBlack.svg')",
+        'light-image': "url('../../assets/imgs/bgImgWhite.svg')",
       },
     },
   },
